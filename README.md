@@ -10,3 +10,7 @@ The data frame we created using our csv and our API required a lot of cleaning. 
 
 This required us to utilize the split function and try to split on the comma of the genres. However, after this it was recognized that we actually needed to create many columns which contained all the genre names and then have a "1" or "0" be the data to represent if the movie in question fell in that category or not respectively.
 <img width="718" alt="Screenshot 2023-09-14 at 7 19 53 PM" src="https://github.com/joannasantana/best_in_show/assets/129118228/fc77e351-cb40-4944-8976-c2edd9d473be">
+
+After cleaning all this information it was finally time for us to utilize our data and attempt to teach this model to predict the future "Best Picture" at the Academy Awards.  In order to do this we 
+
+
