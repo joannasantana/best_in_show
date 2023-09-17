@@ -15,5 +15,7 @@ After cleaning all this information it was finally time for us to utilize our da
 ![Screenshot 2023-09-14 at 8 18 35 PM](https://github.com/joannasantana/best_in_show/assets/129118228/894c0415-a2f1-4c4b-91dd-3e00fdc166bc)
 
 
-In order to get through this issue, we had to go back in and update our columns in order to ensure that did not show up and change our data.  As you can see in our updated columns there is no 'nan' present.  After this, we noticed some more issues with our predictive model in the fact that we had not scaled our data.  After looking through this we determined that scaling our data and recognizing which columns were possibly skewing our data.
+In order to get through this issue, we had to go back in and update our columns in order to ensure that did not show up and change our data.  As you can see in our updated columns there is no 'nan' present.  After this, we noticed some more issues with our predictive model in the fact that we had not scaled our data.  After looking through this we determined that scaling our data and recognizing which columns were possibly skewing our data.  One of the issues was that our columns which may have been written numerically did not actually represent numeric data (for example the years though written as numbers were not numerical data).  We saw a large improvement in the effectiveness of our model once we scaled our data!
+<img width="983" alt="Screenshot 2023-09-17 at 8 23 41 AM" src="https://github.com/joannasantana/best_in_show/assets/129118228/30375661-ee44-4ff7-858e-88ecd364c556">
+
 
