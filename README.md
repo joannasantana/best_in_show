@@ -20,7 +20,6 @@ Our first model attempt used logistic regression and included the following feat
 
 This initial model didn’t predict a winner at all, it predicted loser every time. As you can see the accuracy score is still pretty high, at 84%...but that’s just because 16% of our dataset were actually winners! The actual results are heavily imbalanced, as far more movies are nominated for an Oscar but only one wins each year. For this reason, when looking at accuracy we focused on getting the balanced accuracy score to improve, meaning that our model was not only correctly predicting losers, but correctly predicting winners. You can see that the balanced accuracy score we’re starting with is 0.5, so our model is essentially no better than a completely uninformed guess.
 
-![Alt text](Images/image.png)
 
 The following changes were attempted to improve our model:
 - Model types: Logistic Regression + Random Forest
@@ -44,11 +43,9 @@ When analyzing the confusion matrix, we see that the model predicted winner 15% 
 
 In looking at the precision, the model is correct 81% of the time when it predicts loser, and 62% of the time when it predicts winner. Compared to the precision scores, recall scores go up for actual losers and down for actual winners which makes sense because of our imbalanced dataset.
 
-![Alt text](Images/image-1.png)
 
 After recreating our model, we were officially ready to start using it to try and predict the 2024 Oscar Winners!  We ran the model with films that are predicted to be nominated for best picture to see how they compare to one another using our model. 
 
-![Alt text](Images/image-2.png)
 
 <img width="1038" alt="Screenshot 2023-09-17 at 8 35 22 AM" src="https://github.com/joannasantana/best_in_show/assets/129118228/670a71fc-1b23-4ef6-9414-d30ef53d933b">
 
@@ -57,7 +54,6 @@ Unfortunately, our model said none of them would win.  We considered that this m
 However, we are aware that our model is not foolproof.  Our idea was to test films viewed as "snubbed" in their year to see if our model would correctly determine that they did not win.  This was not the case.  "Singin' in the Rain" was famously snubbed from a 'Best Picture' nomination, however based on our model "Singin' in the Rain" would have won!  
 
 
-![Alt text](Images/image-3.png)
 
 <img width="478" alt="Screenshot 2023-09-17 at 8 39 12 AM" src="https://github.com/joannasantana/best_in_show/assets/129118228/bac05c9b-71b2-4edc-a064-079413aab21e">
 
